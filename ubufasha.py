@@ -44,9 +44,22 @@ ingombajwi3 = sorted(ingombajwi3)
 ingombajwi4 = sorted(ingombajwi4)
 ingombajwi5 = sorted(ingombajwi5)
 
-print("Inyuguti \n{} \n \nIngombajwi: \n{} \n \nIbihekane by'ingombajwi 2: \n{} \n \nIbihekane by'ingombajwi 3: \n{} \n \nIbihekane by'ingombajwi 4: \n{} \n \nIbihekane by'ingombajwi 5: \n{} \n \n".format(
-    ' '.join(inyuguti), ' '.join(ingombajwi1), ' '.join(ingombajwi2), ' '.join(ingombajwi3), ' '.join(ingombajwi4), ' '.join(ingombajwi5)
-    ))
+
+# print("Inyuguti \n{} \n \nIngombajwi: \n{} \n \nIbihekane by'ingombajwi 2: \n{} \n \nIbihekane by'ingombajwi 3: \n{} \n \nIbihekane by'ingombajwi 4: \n{} \n \nIbihekane by'ingombajwi 5: \n{} \n \n".format(
+#     ' '.join(inyuguti), ' '.join(ingombajwi1), ' '.join(ingombajwi2), ' '.join(ingombajwi3), ' '.join(ingombajwi4), ' '.join(ingombajwi5)
+#     ))
+
+ingombajwi_zose = ingombajwi1 + ingombajwi2 + ingombajwi3 + ingombajwi4 + ingombajwi5
+
+amasaku_yose = ['a', 'â', 'aa', 'âa', 'aâ', 'ââ', 'e', 'ê', 'ee', 'êe', 'eê', 'êê', 'i', 'î', 'ii', 'îi', 'iî', 'îî', 'o', 'ô', 'oo', 'ôo', 'oô', 'ôô', 'u', 'û', 'uu', 'ûu', 'uû', 'ûû']
 
 print(f"Ibihekane byose ni: {kubara}")
-        
+print(f"Amajwi yose ashoboka ni: {kubara * 30}")
+
+print("Ibikurikira, ni ibihekane byose, hamwe n'amasaku yose ashoboka mu rurimi rw'Ikinyarwanda")
+
+for ikintu in ingombajwi_zose:
+    for akantu in amasaku_yose:
+        print(ikintu + akantu, end=' ')
+    print()
+    print()
